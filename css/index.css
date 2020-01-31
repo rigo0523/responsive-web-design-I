@@ -1,3 +1,539 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}-
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/* NAVIGATION BAR WITH HEADE */
+#container{
+	width: 980px;
+	margin: 0 auto;
+}
+ 
+
+ header {
+	display: flex;
+	width: 100%;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 10;
+	background: white;
+	box-shadow: 0px 10px 23px #111;  
+ }
+
+ nav {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 width: 70%;
+	 background: white;
+ }
+
+ nav a {
+	 text-decoration: none;
+	 color: gray;
+	 font-size: 20px;
+	 margin-right: 40px;
+	 padding: 1px 6px;
+ }
+
+ .image-logo {
+	 margin-top: 30px;
+	 margin-bottom: 30px;
+	 display: flex;
+	 width: 30%;
+	 justify-content: flex-end;
+ }
+
+ .logo {
+	 height: 50px;
+	 width: 90%;
+ }
+ /*END OF NAVIGATION BAR WITH HEADER */
+
+
+
+ /* INNOVATION SECTION */
+ .innovation {
+	 display: flex;
+	 width: 100%;
+	 flex-direction: row;
+	 justify-content: space-between;
+	 border-bottom: 2px solid black;
+ }
+
+ .retainer {
+	margin-top: 120px;
+	margin-left: 130px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+ .ondemand {
+	margin-top: 80px;
+	margin-bottom: 70px;
+	width: 50%;
+ }
+ 
+ .circle-logo {
+	 display: block;
+	 margin-left: 30px;
+ }
+
+
+ h2 {
+	 font-size: 79px;
+	 line-height: 60px;
+ }
+
+ .on {
+	 margin-left: 70px;
+ }
+
+ .demand {
+	margin-left: 30px;
+ }
+
+ button {
+	 width: 200px;
+	 padding: 10px 50px;
+	 margin-left: 40px;
+	 margin-top: 20px;
+	 border: 1px solid black;
+	 box-shadow: 0px 25px 20px -25px #111; 
+ }
+ /*END OF INNOVATION SECTION */
+
+
+ /* INFORMATION SECTION */
+ /* UNIVERSAL P and H3 ELEMENT */
+ p{
+	font-size: 18px;
+	padding: 0 5px;
+}
+
+h3 {
+   color: black;
+   margin-bottom: 20px;
+   font-size: 20px;
+   padding: 0 5px;
+}
+
+.information {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+.features, .about {
+	flex: 1;
+	padding: 40px 5px;
+}
+
+.middle-img1 {
+	width: 100%;
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+}
+/* END OF INFORMATION SECTION 
+
+
+/* START OF 2ND INFORMATION SECTION
+AFTER IMAGE */
+.moreinfo2 {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.services, .product, .vision {
+	width: 32%;
+	padding: 40px 5px;
+}
+/* END OF 2ND INFORMATION SECTION
+AFTER IMAGE */
+
+
+/* START OF FOOTER */
+footer {
+	width: 100%;
+	border-top: 3px solid black;
+}
+
+address {
+	width: 30%;
+	margin-top: 40px;
+}
+
+span {
+	font-size: 17px;
+}
+
+footer p {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+/* END OF FOOTER */
+
+
+
+
+                        /* MEDIA QUERIES FOR TABLET
+                        AND PHONES */
+
+@media screen  and (max-width: 800px) /* Tablet */ {
+/* NAVIGATION BAR WITH HEADER */
+#container{
+	width: 100%;
+	margin: 0 auto;
+}
+ 
+
+ header {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	box-shadow: 0px 10px 23px #111; 
+ }
+
+ nav {
+	 display: flex;
+	 width: 100%;	
+	 top: 0;
+	 z-index: 10;
+ }
+
+ nav a {
+	 text-decoration: none;
+	 color: gray;
+	 font-size: 20px;
+	 margin-right: 3px;
+	 padding: 1px 10px;
+ }
+
+
+
+ /* INNOVATION SECTION */ 
+ .innovation {
+	width: 100%;
+	border-bottom: 2px solid black;
+	display: flex;
+}
+
+div.retainer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.on, .demand {
+	margin: 0 auto;
+	line-height: 1em;
+}
+
+button {
+	width: 200px;
+	padding: 10px 50px;
+	border: 1px solid black;
+	display: block;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-top: 30px;
+	box-shadow: 0px 5px 15px #111; 
+}
+/*END OF INNOVATION SECTION*/
+
+
+
+/* HIDING IMAGE CIRCLE */
+.ondemand {
+   display: none;
+}
+
+.circle-logo {
+   display: none;
+}
+/* HIDING IMAGE CIRCLE */
+/*END OF INNOVATION SECTION */
+
+.information {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+.features, .about {
+	flex: 1;
+	padding: 40px 5px;
+}
+
+/* END OF INFORMATION SECTION */
+
+
+/*MIDDLE IMAGE*/
+.middle-img1, .middle-img {
+	width: 100%;
+	display: block;
+}
+/* END OF MIDDLE IMAGE */
+
+/* START OF 2ND INFORMATION SECTION
+AFTER IMAGE */
+.moreinfo2 {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.services, .product, .vision {
+	flex: 1;
+	padding: 40px 5px;
+}
+/* END OF 2ND INFORMATION SECTION
+AFTER IMAGE */
+
+
+/* START OF FOOTER */
+footer {
+	width: 100%;
+	border-top: 3px solid black;
+}
+
+address {
+	width: 30%;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+span {
+	font-size: 17px;
+}
+
+footer p {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+/* END OF FOOTER */
+
+}                       /* ^^^^^END OF 800PX^^^^^^ */
+
+
+
+
+
+                        /* START OF 500PX MOBILE */
+
+  @media screen and (max-width: 500px) /* Mobile */ {
+/* NAVIGATION BAR WITH HEADE */
+#container{
+	width: 100%;
+	margin: 0 auto;
+}
+ 
+
+ header {
+	display: flex;
+	width: 100%;
+	flex-direction: column-reverse;
+  position: relative;
+ }
+
+ nav {
+	 display: flex;
+   flex-direction: column;
+	 width: 100%;
+	 background: white;
+ }
+
+ nav a {
+    text-decoration: none;
+	color: gray;
+	font-size: 20px;
+    flex: 1;
+    border: 0.5px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: -2px 10px 30px -2px gray;
+ }
+
+ .image-logo {
+	width: 100%;
+ }
+
+ .logo {
+	 width: 50%;
+   margin: 0 auto;
+ }
+
+
+ /* INNOVATION SECTION */ 
+ .innovation {
+	width: 100%;
+	border-bottom: 2px solid black;
+	display: flex;
+}
+
+div.retainer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0;
+}
+/*END OF INNOVATION SECTION*/
+
+
+
+/*INFORMATION SECTION */
+.information {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+    box-shadow: -1px -15px 30px -1px #111;
+}
+
+.features, .about {
+	padding: 5px 0;
+    margin-top: 45px;
+}
+    
+.about {
+    margin-bottom: 45px;
+ }    
+/* END OF INFORMATION SECTION */
+
+
+
+/*MIDDLE IMAGE*/
+.middle-img1, .middle-img {
+    width: 100%;
+    height: 200px;
+}
+/* END OF MIDDLE IMAGE */
+
+
+
+/* START OF 2ND INFORMATION SECTION
+AFTER IMAGE */
+.moreinfo2 {
+	display: flex;
+	flex-direction: column;
+    width: 100%;
+}
+
+.services, .product, .vision {
+	width: 100%;
+	padding: 5px 0;
+    margin-top: 45px;
+}
+
+.vision {
+  margin-bottom: 45px;
+ }    
+    
+.services {
+   margin-top: 45px;
+}
+/* END OF 2ND INFORMATION SECTION
+AFTER IMAGE */
+
+
+
+/* START OF FOOTER */
+footer {
+	width: 100%;
+	border-top: 3px solid black;
+}
+
+address {
+	width: 40%;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+span {
+	font-size: 17px;
+}
+
+footer p {
+	text-align: center;
+	margin-top: 60px;
+    margin-bottom: 40px;
+}
+/* END OF FOOTER */
+
+} /* END OF 500 PX MOBILE ^^^^^^^^^ */
 
 
